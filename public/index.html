@@ -14,43 +14,51 @@
         html,
         body {
             margin: 0;
-            padding: 0;
+            padding: 10px;
             font-family: 'Roboto Mono', monospace;
             color: white;
-            text-align: center;
             background-color: black;
             background-size: cover;
             background-repeat: no-repeat;
         }
 
         #content {
-            margin-top: 10%;
+            margin: 0 auto;
+            max-width: 800px;
         }
 
         #rocket {
             display: inline-flex;
             animation: rocket 4s linear infinite;
-            transform-origin: bottom center;
-            transform: rotate(-45deg);
+            transform-origin: bottom left;
         }
 
         @keyframes rocket {
-            10% {
-                transform: rotate(-45deg) translate(0%, 0%);
-            }
-            40% {
-                transform: rotate(-45deg) translate(250%, -200%);
+            30% {
+                transform: translate(30%, -30%);
             }
             100% {
-                transform: rotate(-45deg) translate(0%, 0%);
+                transform: translate(0%, 0%);
             }
+        }
+
+        .bitmoji {
+            position: absolute;
+            left: 0;
         }
     </style>
 </head>
 
 <body>
+    <!-- <img class="bitmoji" src="img/media_result_20220116_d9b222d4-9c8d-4723-87d5-18d9b3d0c9c7.png" /> -->
     <div id="content">
-        <h1>I&nbsp;implement anything with code&nbsp;&nbsp;<span id="rocket">🚀</span></h1>
+        
+        <h1>Andrey Tsaregorodtsev</h1>
+        <div>
+            <p>@andreytreyt</p>
+        </div>
+        <h1 style="font-weight: lighter;">I&nbsp;implement anything with code&nbsp;<span id="rocket">🚀</span></h1>
+        <p><span>🎈</span>&nbsp;Born November&nbsp;24,&nbsp;1990</p>
     </div>
 </body>
 
