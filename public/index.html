@@ -5,25 +5,28 @@
     <meta charset="utf-8" />
     <meta name='viewport' content='width=device-width, initial-scale=1' />
     <title>Andrei Tsaregorodtsev</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7be1fb55fa.js" crossorigin="anonymous"></script>
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
-        html {
-            margin: 0;
-            padding: 0;
-            background-color: black;
-        }
-
+        html,
         body {
             margin: 0;
             padding: 0;
             font-family: 'Roboto Mono', monospace;
             font-size: 1em;
-            color: white;
+            background-color: #000;
+            color: #fff;
         }
 
         .container {
@@ -31,24 +34,18 @@
             max-width: 900px;
         }
 
+        .container a {
+            color: #fff;
+        }
+
         .container>section {
-            margin: 60px 30px;
+            margin: 60px 5%;
         }
 
         .container>section>ul {
             padding: 0;
             list-style: none;
             line-height: 2em;
-        }
-
-        .contacts a {
-            color: white;
-            font-size: 36px;
-            margin-right: 12px;
-        }
-
-        .blog a {
-            color: white;
         }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -65,11 +62,13 @@
 
 <body>
     <div class="container">
-
-        <section class="main">
-            <h1>Hi 👋 I'm Andrei Tsaregorodtsev</h1>
-            <p>🎈&nbsp;Born <span id="birth"></span>, <span id="age"></span> y.o.</p>
-            <section class="contacts">
+        <section>
+            <h1>Hi&nbsp;<i class="fa-solid fa-hand fa-flip text-warning"></i>&nbsp;I'm Andrei Tsaregorodtsev</h1>
+            <p>And I'm a&nbsp;Software Engineer&nbsp;<i class="fa-solid fa-laptop-code text-info"></i></p>
+            <p><i class="fa-solid fa-cake-candles text-danger"></i>&nbsp;Born <span id="birth"></span>, <span
+                    id="age"></span>&nbsp;y.o.
+            </p>
+            <section class="contacts fa-2x">
                 <a href="mailto:andreytreyt@hotmail.com" target="blank" title="email"><i
                         class="fa-solid fa-square-envelope"></i></a>
                 <a href="https://t.me/andreytreyt" target="blank" title="telegram"><i
@@ -80,24 +79,37 @@
                         class="fa-brands fa-github"></i></a>
             </section>
         </section>
-        <section class="about">
-            <h1>About</h1>
+        <section>
+            <h3>Mission</h3>
+            <p>
+                The most useless person is who does unnecessaries.
+                <br />
+                So I find important things and do them effectively&nbsp;<i
+                    class="fa-solid fa-fire fa-fade text-danger"></i>
+            </p>
+        </section>
+        <section>
+            <h3>About</h3>
             <ul>
                 <li>
-                    <span>🙌</span> 3+ years of technical leadership
+                    <i class="fa-solid fa-hand-fist text-warning"></i>&nbsp;3+ years of technical leadership
                 </li>
                 <li>
-                    <span>🤘</span> 10+ years of software engineering background
+                    <i class="fa-solid fa-hands text-warning"></i>&nbsp;10+ years of software engineering background
                 </li>
                 <li>
-                    <span>💪</span> Strong experience in software architecture and development lifecycle
+                    <i class="fa-solid fa-thumbs-up text-warning"></i>&nbsp;Strong experience in software architecture
+                    and
+                    development lifecycle
                 </li>
                 <li>
-                    <span>💪</span> Strong experience in Domain Driven Design and business requirement refinement
+                    <i class="fa-solid fa-thumbs-up text-warning"></i>&nbsp;Strong experience in Domain Driven Design
+                    and
+                    business requirement refinement
                 </li>
                 <br />
                 <li>
-                    <span>🤏</span> Some experience in
+                    <i class="fa-solid fa-hand-lizard text-warning"></i>&nbsp;Some experience in
                     <ul>
                         <li>
                             web and mobile development
@@ -112,16 +124,31 @@
                 </li>
                 <br />
                 <li>
-                    <span>👍</span> Certificated scrum master
+                    <i class="fa-solid fa-circle-check text-success"></i>&nbsp;<a
+                        href="certificate_psmi_tsaregorodtsev.pdf" target="blank">Certificated Professional Scrum Master
+                        I</a>
                 </li>
             </ul>
         </section>
-        <section class="blog">
-            <h1>Blog</h1>
+        <section>
+            <h3>Pet Projects</h3>
+            <uL>
+                <li>
+                    <i class="fa-solid fa-dumbbell text-info"></i>&nbsp;<a href="https://hifitness.app/"
+                        target="blank">Hi&nbsp;Fitness</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-kit-medical text-info""></i>&nbsp;<a href="https://checkuper.com/"
+                        target="blank">Checkuper</a>
+                </li>
+            </uL>
+        </section>
+        <section>
+            <h3>Blog</h3>
             <ul>
                 <li>
-                    <span>📄</span>
-                    <a href="https://gist.github.com/andreytreyt/ca13f8241491d7e6927437aa51e47cf4" target="blank">Sign
+                    <i class="fa-solid fa-note-sticky text-info"></i>&nbsp;<a
+                        href="https://gist.github.com/andreytreyt/ca13f8241491d7e6927437aa51e47cf4" target="blank">Sign
                         and upload Flutter apk-file with Github action</a>
                 </li>
             </ul>
